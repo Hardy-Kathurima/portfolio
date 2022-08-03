@@ -300,7 +300,7 @@
        </div>
        <div class="row">
          <div class="col s12 m10 offset-m2">
-           <form action="">
+           <form method="POST" data-netlify="true">
              <div class="input-field">
                <i class="material-icons prefix">person</i>
                <input type="text" name="name" id="name" required>
@@ -317,8 +317,12 @@
                <label for="message">Message</label>
              </div>
              <div class="input-field">
+              <div data-netlify-recaptcha="true"></div>
+             </div>
+             <div class="input-field">
                <div class="center-align"><button class="btn black" type="submit">Submit</button></div>
              </div>
+             
            </form>
          </div>
          
