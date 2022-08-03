@@ -7,37 +7,386 @@
     <title>Hardy Kathurima</title>
     <link rel="stylesheet" href="css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body class="white darken-4">
+   <header>
     <nav>
-        <div class="nav-wrapper">
-        <div class="container">
-            <a href="#" class="brand-logo">Logo</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="sass.html">Sass</a></li>
-              <li><a href="badges.html">Components</a></li>
-              <li><a href="collapsible.html">JavaScript</a></li>
-            </ul>
-        </div>
-        </div>
-      </nav>
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
+      <div class="nav-wrapper black">
+      <div class="container">
+          <a href="#" class="brand-logo"> <img src="images/logo.png" alt=""></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="btn white black-text"  href="Hardy-CV.pdf" download="Hardy Kathurima CV">Resume</a></li>
+          </ul>
+      </div>
+      </div>
+    </nav>
+    <ul class="sidenav sidenav-close" id="mobile-demo">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="btn black white-text" href="Hardy-CV.pdf" download="Hardy Kathurima CV">Resume</a></li>
+    </ul>
+   </header>
+
+   <main>
+    <div class="container">
+      <section class="intro section">
+       <div class="row">
+         <div class="col m2">
+           <div class="social-icons hide-on-small-and-down">
+ 
+             <div><a href="https://www.linkedin.com/in/hardy-kathurima-179310186/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></div>
+             <div><a href="https://github.com/Hardy-Kathurima" target="_blank"><ion-icon name="logo-github"></ion-icon></a></div>
+             <div><a class="copy" data-clipboard-text="hardykathurima@gmail.com"><ion-icon name="mail"></ion-icon></a></div>
+             <div><a class="phone" data-clipboard-text="+254  703642687"><ion-icon name="call"></ion-icon></a></div>
+             
+       
+       
+            </div>
+         </div>
+         <div class="col s12 m10">
+           <h5>Hello, My name is Hardy.</h5>
+           <h1 data-text="A Full-Stack Web Developer.">A Full-Stack Web Developer.</h1>
+           <p>I am a full-stack web developer helping businesses and individuals bring  their  website ideas into action. <br> I have a passion for learning and desire to keep up with latest technologies.  I have expert knowledge <br> in both  the backend and   frontend web development.</p>
+           <div>
+             <a href="#projects" class="btn black text-white copy" >View My Work</a>
+           </div>
+         </div>
+      
+       </div>
+      </section>
+      <section class="about section scrollspy" id="about">
+       <hr>
+       <div class="center-align">
+       </div>
+       <div class="row">
+         <div class="col s12 m6 mb-3">
+           <h5>About Me</h5>
+           <p class="details">Hello! My name is Hardy and I am passionate about creating Websites. My main focus is to create user friendly Websites that will be able to convert visitors into long term customers. Checkout some of the websites i have created in the  <a href="#projects">Projects</a>  section.</p>
+           <p>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me. </p>
+ 
+           <div>
+             <a href="#contact" class="btn black text-white">Contact Me</a>
+           </div>
+         </div>
+         <div class="col s12 m5 offset-m1">
+           <h5 class="mb-3">My Skills</h5>
+           <div class="row">
+             <div class="col chip">PHP</div>
+             <div class="col chip">Javascript</div>
+             <div class="col chip">Python</div>
+             <div class="col chip">CSS</div>
+             <div class="col chip">Bootstrap</div>
+             <div class="col chip">Jquery</div>
+             <div class="col chip">Tailwind CSS</div>
+             <div class="col chip">Materialize CSS</div>
+             <div class="col chip">Vue Js</div>
+             <div class="col chip">React JS</div>
+             <div class="col chip">Laravel</div>
+             <div class="col chip">Laravel livewire</div>
+             <div class="col chip">SQL</div>
+             <div class="col chip">Git</div>
+             <div class="col chip">Github</div>
+             <div class="col chip">Figma</div>
+             <div class="col chip">Vuex</div>
+             <div class="col chip">React Redux</div>
+           </div>    
+         </div>
+       </div>
+      </section>
+ 
+      <section class="section education">
+       <div class="center-align">
+         <h4>Education</h4>
+       </div>
+       <div class="row mb-3">
+         <div class="col s12 s8 offset-m3">
+           <p><span class="year">2020</span> -  Bachelor of science   Computer science Meru university of Science and Technology.</p>
+           <p><span class="year">2014</span> -  Kaing’inyo Mixed Day Secondary School.</p>
+           <p><span class="year">2009</span> -  Kiraria Primary School.</p>
+ 
+         </div>
+       </div>
+      </section>
+ 
+      <section class="section work">
+       <div class="center-align">
+         <h4>Work Experience</h4>
+       </div>
+       <div class="row">
+         <div class="col s12">
+           <ul class="tabs mb-3">
+             <li class="tab col s5 "><a href="#test1" class="active">Vancepos</a></li>
+             <li class="tab col s3"><a  href="#test2">KNLS</a></li>
+             <li class="tab col s4"><a href="#test4">MEWASS</a></li>
+           </ul>
+         </div>
+         <div id="test1" class="col s12">
+           <div class="row">
+             <div class="col s12 m4">
+               <h5>Web Developer</h5>
+              <p class="text-grey">October 2021 - June 2022</p>
+             </div>
+             <div class="col s12 m8">
+               <h6>Responsibilities</h6>
+               <p>
+                 <span><i class="material-icons left">play_arrow</i></span>
+                 <span>Implementing new features in already existing POS.</span>
+               </p>
+               <p>
+                 <span><i class="material-icons left">play_arrow</i></span>
+                 <span>Maintaining softwares and offering IT support to clients.</span>
+               </p>
+               <p>
+                 <span><i class="material-icons left">play_arrow</i></span>
+                 <span>Create website solutions for  various organizations.</span>
+               </p>
+               <p>
+                 <span><i class="material-icons left">play_arrow</i></span>
+                 <span>Work with a variety of different languages and frameworks.</span>
+               </p>
+ 
+             </div>
+           </div>
+         </div>
+         <div id="test2" class="col s12">
+           <div class="row">
+             <div class="col s12 m4">
+               <h5>IT Support</h5>
+              <p class="text-grey">June 2019 - August 2019</p>
+             </div>
+             <div class="col s12 m8">
+               <h6>Responsibilities</h6>
+               <p>
+                 <span><i class="material-icons left">play_arrow</i></span>
+                 <span>Network/internet configuration and troubleshooting.</span>
+               </p>
+               <p>
+                 <span><i class="material-icons left">play_arrow</i></span>
+                 <span>Responding to help desk on ICT issues.</span>
+               </p>
+               <p>
+                 <span><i class="material-icons left">play_arrow</i></span>
+                 <span>Hardware and software maintenance.</span>
+               </p>
+               <p>
+                 <span><i class="material-icons left">play_arrow</i></span>
+                 <span>Managing the Library management system (KOHA).</span>
+               </p>
+ 
+             </div>
+           </div>
+         </div>
+         <div id="test4" class="col s12">
+           <div class="row">
+             <div class="col s12 m4">
+               <h5>IT Support</h5>
+              <p class="text-grey">July 2017 - September 2017</p>
+             </div>
+             <div class="col s12 m8">
+               <h6>Responsibilities</h6>
+               <p>
+                 <span><i class="material-icons left">play_arrow</i></span>
+                 <span>Responding to help desk on ICT issues.</span>
+               </p>
+               <p>
+                 <span><i class="material-icons left">play_arrow</i></span>
+                 <span>Network/internet configuration and troubleshooting.</span>
+               </p>
+               <p>
+                 <span><i class="material-icons left">play_arrow</i></span>
+                 <span>Hardware and software maintenance.</span>
+               </p>
+               <p>
+                 <span><i class="material-icons left">play_arrow</i></span>
+                 <span>LAN cabling using the CAT6 cable and making the patch cable</span>
+               </p>
+ 
+             </div>
+           </div>
+         </div>
+       </div>
+      </section>
+ 
+      <section class="projects section scrollspy" id="projects">
+       <div class="center-align">
+         <h4>Projects</h4>
+       </div>
+       <div class="row ">
+         <div class="col s12 m8 project-img">
+           <a href="https://vancepos.com" target="_blank" title="Vance  Computers website">
+             <img src="images/vancepos.png" class="responsive-img" alt="the radix hotel">
+           </a>
+         </div>
+         <div class="col s12 m4">
+           <h5 class="mb-3">Vance Computers</h5>
+           <p>A Landing page to create awareness on the services offered by Vance Computers, Recent works and how to contact them.</p>
+           <div class="mb-3 grey-text darken-3"><span>CSS</span>   <span>Javascript</span>   <span>Jquery</span> <span>Bootstrap</span></div>
+           <div class="mb-3" >
+             <a href="https://vancepos.com" target="_blank" class="btn transparent black-text">
+               <span class="mr-2">EXPLORE</span>
+               <span class="right"><i class="material-icons">arrow_forward</i></span>
+             </a>
+           </div>
+         </div>
+       </div>
+      <hr class="divide">
+       <div class="row ">
+         <div class="col s12 m4">
+           <h5 class="mb-3">The Radix Hotel</h5>
+           <p>A web app to display various services offered by The Radix Hotel , the location and contact details.The web app also enables visitors to book rooms, restaurant, open grounds, chapel and conferences through the site.</p>
+           <div class="mb-3 grey-text darken-3"><span>Laravel</span>   <span>Livewire</span>   <span>Javascript</span> <span>CSS</span></div>
+           <div class="mb-3" >
+             <a href="https://theradixhotel.co.ke" target="_blank" class="btn transparent black-text">
+               <span class="mr-2">EXPLORE</span>
+               <span class="right"><i class="material-icons">arrow_forward</i></span>
+             </a>
+           </div>
+         </div>
+         <div class="col s12 m8 project-img">
+          <a href="https://theradixhotel.co.ke"  target="_blank" title="The radix hotel">
+           <img src="images/theradix.png" class="responsive-img" alt="the radix hotel">
+          </a>
+         </div>
+       </div>
+       <hr class="divide">
+       <div class="row ">
+         <div class="col s12 m8 project-img">
+           <a href="https://github.com/Hardy-Kathurima/legendary_writers" target="_blank" title="Legendary writers Github">
+             <img src="images/legendaryWriters.png" class="responsive-img" alt="legendary writers">
+           </a>
+         </div>
+         <div class="col s12 m4 ">
+           <h5 class="mb-3">Legendary Writers</h5>
+           <p>Inspired by online writing services, this web app allows students to signup for an account to get homework help.Students can submit their homework and make payments.Once the task is completed the writer can send the completed work to the student via mail.</p>
+           <div class="mb-3 grey-text darken-3"><span>Javascript</span>   <span>Alpine Js</span>   <span>Laravel</span> <span>Livewire</span></div>
+           <div >
+             <a href="https://github.com/Hardy-Kathurima/legendary_writers" target="_blank" class="btn transparent black-text">
+               <span class="mr-2">EXPLORE</span>
+               <span class="right"><i class="material-icons">arrow_forward</i></span>
+             </a>
+           </div>
+         </div>
+       </div>
+       <hr class="divide">
+       <div class="row ">
+         <div class="col s12 m4 ">
+           <h5 class="mb-3">Triton Property</h5>
+           <p>A Real Estate website where potential clients can view various properties for sale,the features of the properties , the cost and the specified location. The web app allows customers to book a free site visit to a property of their choice.</p>
+           <div class="mb-3 grey-text darken-3"><span>Bootstrap</span>   <span>Laravel</span>   <span>CSS</span> <span>Livewire</span> <span>Alpine jS</span></div>
+           <div class="mb-3" >
+             <a href="http://tritonproperty.co.ke" target="_blank" class="btn transparent black-text">
+               <span class="mr-2">EXPLORE</span>
+               <span class="right"><i class="material-icons">arrow_forward</i></span>
+             </a>
+           </div>
+         </div>
+         <div class="col s12 m8 project-img">
+           <a href="http://tritonproperty.co.ke" target="_blank" title="Triton Property Limited">
+             <img src="images/tritonproperty.png" class="responsive-img" alt="triton property">
+           </a>
+         </div>
+       </div>
+      </section>
+      <section class="contact section scrollspy" id="contact">
+       <div class="center-align">
+         <h4>Get In Touch</h4>
+       </div>
+       <div class="row">
+         <div class="col s12 m10 offset-m2">
+           <form action="">
+             <div class="input-field">
+               <i class="material-icons prefix">person</i>
+               <input type="text" name="name" id="name" required>
+               <label for="name">Name</label>
+             </div>
+             <div class="input-field">
+               <i class="material-icons prefix">email</i>
+               <input type="email" name="email" id="email" required>
+               <label for="email">Email</label>
+             </div>
+             <div class="input-field">
+               <i class="material-icons prefix">message</i>
+               <textarea name="message" id="message" class="materialize-textarea" required></textarea>
+               <label for="message">Message</label>
+             </div>
+             <div class="input-field">
+               <div class="center-align"><button class="btn black" type="submit">Submit</button></div>
+             </div>
+           </form>
+         </div>
+         
+       </div>
+      </section>
+     <div class="center-align hide-on-med-and-up">
+       <div class="mobile-icons">
+         <a href="https://github.com/Hardy-Kathurima" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+         <a class="copy" data-clipboard-text="hardykathurima@gmail.com"><ion-icon name="mail"></ion-icon></a>
+         <a class="phone" data-clipboard-text="+254  703642687"><ion-icon name="call"></ion-icon></a>
+       </div>
+     </div>
+     </div>
+   </main>
+
+     <footer class="footer-copyright black white-text text-darken-4">
+      <div class="container py-3">&copy; Hardy Kathurima . All Rights Reserved 2022 </div>
+     </footer>
+
+
+     <div class="box">
+      <a class="btn-floating black" href="#">
+        <i class="material-icons">arrow_upward</i>
+      </a>
+    </div>
+
+      
 
 
 
  <script src="jquery-3.4.1.min.js"></script>
  <script src="js/materialize.min.js"></script>
+ <script src="clipboard.min.js"></script>
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
  <script>
-     $(document).ready(function(){
+    $(document).ready(function(){
     $('.sidenav').sidenav();
+    $('.tabs').tabs();
+    $('.scrollspy').scrollSpy();
+    var clipboard = new ClipboardJS('.copy');
+    clipboard.on('success', function(e){
+    M.toast({html: 'Email copied to clipboard'})
+  })
+  var phone = new ClipboardJS('.phone');
+  phone.on('success',function(e){
+    M.toast({html: 'Phone copied to clipboard'})
+  })
   });
+
+  let btn = document.querySelector(".box");
+  let body = document.querySelector("#body");
+  btn.addEventListener('click', scrollUp);
+  function scrollUp() {
+  document.documentElement.scrollTop = 0;
+  }
+  window.onscroll = function () {
+  scrollFunction()
+  };
+  function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+  }
+ 
  </script>
 
     
