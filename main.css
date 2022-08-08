@@ -109,7 +109,7 @@ h5{
     font-weight: bolder;
   }
 
-  .container{
+/*   .container{
     animation: loadEffect 0.8s;
   }
 
@@ -125,7 +125,7 @@ h5{
         transform: rotateX(0);
     }
     
-  }
+  } */
   @keyframes type{ 
     from { width: 0; } 
   } 
