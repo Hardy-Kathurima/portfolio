@@ -1,6 +1,122 @@
 body{
     overflow-x: hidden !important;
 }
+/* Style for the image container */
+.image-container {
+    position: relative;
+    height: 400px;  /* Set the visible height */
+    overflow: hidden; /* Hide overflowed part of the image */
+  }
+
+  /* Style for the image inside the container */
+  .scroll-image {
+    transition: transform 8s ease-in-out; /* Adjusted to slow down the scrolling */
+    width: 100%;
+    height: auto;
+  }
+
+  /* Hover effect: move the image up to reveal the bottom */
+  .image-container:hover .scroll-image {
+    transform: translateY(-90%); /* Move the image up by its full height */
+  }
+
+  /* Main Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+/* Section Header */
+.work-header h4 {
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+/* Tabs Styling */
+.tabs-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.tabs {
+    display: flex;
+    gap: 1rem;
+}
+.tab {
+    list-style: none;
+}
+.tab a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    background-color: #f9f9f9;
+    border: 2px solid #1a1a1a;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.tab a:hover {
+    background-color: #e5e5e5;
+}
+.tab a.active {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 2px solid #1a1a1a;
+}
+
+/* Content Area Styling */
+.tab-content {
+    display: none;
+    padding: 2rem;
+    border: 2px solid #1a1a1a;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+.tab-content.active {
+    display: block;
+}
+
+/* Work Role Styling */
+.work-role h5 {
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+.date-range {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 1rem;
+}
+.responsibilities, .achievements {
+    margin-top: 1rem;
+    color: #1a1a1a;
+}
+.responsibilities li, .achievements li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+    list-style-type: none;
+}
+.responsibilities li:before, .achievements li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #1a1a1a;
+}
+
+/* Additional Styling */
+ul.responsibilities, ul.achievements {
+    padding-left: 1.2rem;
+    list-style-type: disc;
+    color: #1a1a1a;
+}
+
+
+
 .intro{
     padding: 17vh 0;
 }
@@ -41,10 +157,10 @@ h5{
 .py-3{
     padding: 5px 0;
 }
-.details,.projects p,.intro p{ 
+.details,.projects p,.intro p{
     text-align: justify !important;
     text-justify: distribute !important;
-    text-align-last: left !important; 
+    text-align-last: left !important;
 }
 .tabs li a{
     color:#000 !important;
@@ -89,7 +205,7 @@ h5{
     transition: 1s;
 }
 .project-img img:hover{
-  transform: scale(0.8);  
+  transform: scale(0.8);
 }
 .box {
     display: none;
@@ -124,11 +240,11 @@ h5{
         opacity: 1;
         transform: rotateX(0);
     }
-    
+
   } */
-  @keyframes type{ 
-    from { width: 0; } 
-  } 
+  @keyframes type{
+    from { width: 0; }
+  }
 
 
 @media screen and  (max-width:768px){
@@ -144,5 +260,30 @@ h5{
     .intro{
         padding: 10vh 0;
     }
-    
+     /* Stack Tabs Vertically */
+     .tabs {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .tab a {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+    /* Reduce Content Padding */
+    .tab-content {
+        padding: 1rem;
+    }
+    /* Condense Header and Role Spacing */
+    .work-header h4 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .work-role h5 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    .date-range {
+        font-size: 0.9rem;
+    }
+
 }
